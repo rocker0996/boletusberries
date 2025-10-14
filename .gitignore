@@ -1,0 +1,49 @@
+# Backup files
+_pgbackup/
+_pginfo/
+
+# Pinegrow files
+pinegrow.json
+*.pinegrow
+
+# Help documentation (not needed for production)
+help-documentation/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if any)
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Cache files
+*.cache
+.cache/
+
+# Mail files (if using local mail)
+mail.php

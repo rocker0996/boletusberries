@@ -1,0 +1,30 @@
+# Перенаправление всех страниц на русскую версию
+/export /ru/export.html 200
+/about /ru/about.html 200
+/contact /ru/contact.html 200
+/production /ru/production.html 200
+/retail /ru/retail.html 200
+/wholesale /ru/wholesale.html 200
+/horeca /ru/horeca.html 200
+
+# Главная страница
+/ /ru/index.html 200
+
+# 404 страница
+/* /ru/404.html 404
+
+# English version redirects
+/en/export /en/export.html 200
+/en/about /en/about.html 200
+/en/contact /en/contact.html 200
+/en/production /en/production.html 200
+/en/retail /en/retail.html 200
+/en/wholesale /en/wholesale.html 200
+/en/horeca /en/horeca.html 200
+/en/catalog /en/catalog.html 200
+
+# English main page
+/en /en/index.html 200
+
+# English 404 page
+/en/* /en/404.html 404

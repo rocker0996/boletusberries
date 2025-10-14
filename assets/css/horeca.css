@@ -1,0 +1,549 @@
+.products-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+.horeca-product-card {
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.horeca-product-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.product-image {
+	width: 100%;
+	height: 220px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 15px 15px 0 0;
+	transition: all 0.3s ease;
+}
+
+.product-content {
+	padding: 20px;
+	background: #fff;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	border-radius: 0 0 15px 15px;
+	transition: all 0.3s ease;
+	position: relative;
+}
+
+.product-content h4 {
+	color: #333;
+	margin-bottom: 8px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.product-content p {
+	display: none;
+	color: #666;
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all 0.3s ease;
+}
+
+.product-categories {
+	display: none;
+	margin-top: 10px;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: all 0.3s ease;
+}
+
+/* Hover эффект для показа описания */
+.horeca-product-card:hover .product-content {
+	height: auto;
+	min-height: 80px;
+	padding: 20px;
+}
+
+.horeca-product-card:hover .product-content h4 {
+	margin-bottom: 12px;
+	font-size: 18px;
+}
+
+.horeca-product-card:hover .product-content p {
+	display: block;
+	opacity: 1;
+	transform: translateY(0);
+	margin-bottom: 12px;
+}
+
+.horeca-product-card:hover .product-categories {
+	display: block;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.horeca-product-card:hover .product-image {
+	height: 180px;
+}
+
+/* Advantages Section */
+.advantages-section {
+	background: #f8f9fa;
+	padding: 80px 0;
+}
+
+.advantage-card {
+	background: #fff;
+	padding: 30px 20px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+	text-align: center;
+	transition: all 0.3s ease;
+	height: 100%;
+}
+
+.advantage-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.advantage-icon {
+	width: 80px;
+	height: 80px;
+	background: linear-gradient(135deg, #107403, #0d5a02);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 20px;
+	transition: all 0.3s ease;
+}
+
+.advantage-icon i {
+	font-size: 32px;
+	color: #fff;
+}
+
+.advantage-card:hover .advantage-icon {
+	transform: scale(1.1);
+}
+
+.advantage-card h4 {
+	color: #333;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.advantage-card p {
+	color: #666;
+	font-size: 14px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+/* Usage Examples Section */
+.usage-examples-section {
+	padding: 80px 0;
+}
+
+.usage-card {
+	background: #fff;
+	padding: 30px 25px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+	text-align: center;
+	transition: all 0.3s ease;
+	height: 100%;
+	border-top: 4px solid #107403;
+}
+
+.usage-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.usage-icon {
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(135deg, #107403, #0d5a02);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 20px;
+	transition: all 0.3s ease;
+}
+
+.usage-icon i {
+	font-size: 28px;
+	color: #fff;
+}
+
+.usage-card:hover .usage-icon {
+	transform: scale(1.1);
+}
+
+.usage-card h4 {
+	color: #333;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.usage-card ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.usage-card ul li {
+	color: #666;
+	font-size: 14px;
+	line-height: 1.8;
+	margin-bottom: 8px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.usage-card ul li:before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: #107403;
+	font-weight: bold;
+}
+
+/* CTA Section */
+.cta-section {
+	padding: 40px 30px;
+	background: #f8f9fa;
+	border-radius: 15px;
+	margin: 40px 20px;
+}
+
+.cta-section h4 {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: #333;
+}
+
+.cta-section p {
+	font-size: 16px;
+	margin-bottom: 25px;
+	color: #666;
+	line-height: 1.6;
+}
+
+/* Competitive Advantages Section */
+.competitive-advantages-section {
+	padding: 80px 0;
+}
+
+.competitive-card {
+	background: #fff;
+	padding: 30px 20px;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+	text-align: center;
+	transition: all 0.3s ease;
+	height: 100%;
+	border-left: 4px solid #107403;
+}
+
+.competitive-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.competitive-icon {
+	width: 70px;
+	height: 70px;
+	background: linear-gradient(135deg, #107403, #0d5a02);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 20px;
+	transition: all 0.3s ease;
+}
+
+.competitive-icon i {
+	font-size: 28px;
+	color: #fff;
+}
+
+.competitive-card:hover .competitive-icon {
+	transform: scale(1.1);
+}
+
+.competitive-card h4 {
+	color: #333;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.competitive-card p {
+	color: #666;
+	font-size: 14px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+/* Pricing Section */
+.pricing-section {
+	padding: 80px 0;
+}
+
+.pricing-card {
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+	transition: all 0.3s ease;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.pricing-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.pricing-card.featured {
+	border: 3px solid #107403;
+	transform: scale(1.05);
+}
+
+.pricing-card.featured:before {
+	content: "Популярный";
+	position: absolute;
+	top: 20px;
+	right: -30px;
+	background: #107403;
+	color: #fff;
+	padding: 5px 40px;
+	font-size: 12px;
+	font-weight: 600;
+	transform: rotate(45deg);
+}
+
+.pricing-header {
+	padding: 30px 20px 20px;
+	text-align: center;
+	border-bottom: 1px solid #eee;
+}
+
+.pricing-header h4 {
+	color: #333;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.price {
+	font-size: 32px;
+	font-weight: 700;
+	color: #107403;
+	margin-bottom: 0;
+}
+
+.pricing-features {
+	list-style: none;
+	padding: 20px;
+	margin: 0;
+}
+
+.pricing-features li {
+	color: #666;
+	font-size: 14px;
+	line-height: 1.8;
+	margin-bottom: 12px;
+	position: relative;
+	padding-left: 25px;
+}
+
+.pricing-features li:before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: #107403;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Form Submit Button */
+.contact-form input[type="submit"] {
+	color: #fff !important;
+}
+
+/* Catalog Styles */
+.filter-buttons {
+	text-align: center;
+	margin: 40px 0;
+}
+
+.filter-btn {
+	display: inline-block;
+	padding: 12px 24px;
+	margin: 5px;
+	background-color: #f8f9fa;
+	color: #333;
+	border: 2px solid #e9ecef;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+	background-color: #107403;
+	color: white;
+	border-color: #107403;
+}
+
+.product-item {
+	display: none;
+	transition: all 0.3s ease;
+}
+
+.product-item.show {
+	display: block;
+}
+
+.catalog-description {
+	background-color: #f8f9fa;
+	padding: 40px 0;
+	margin: 40px 0;
+}
+
+.catalog-stats {
+	background: linear-gradient(135deg, #80b435 0%, #6a9a2e 100%);
+	color: white;
+	padding: 60px 0;
+	margin: 60px 0;
+}
+
+.stat-item {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.stat-number {
+	font-size: 2.5rem;
+	font-weight: bold;
+	display: block;
+}
+
+.stat-label {
+	font-size: 1rem;
+	opacity: 0.9;
+}
+
+.product-categories {
+	margin-top: 10px;
+}
+
+.category-tag {
+	display: inline-block;
+	background-color: #80b435;
+	color: white;
+	padding: 2px 8px;
+	border-radius: 12px;
+	font-size: 11px;
+	margin: 2px;
+}
+
+@media (max-width: 768px) {
+	.horeca-product-card {
+		margin-bottom: 20px;
+		height: 280px;
+	}
+	
+	.product-image {
+		height: 180px;
+	}
+	
+	.horeca-product-card:hover .product-image {
+		height: 150px;
+	}
+	
+	.product-content {
+		padding: 15px;
+		height: 100px;
+	}
+	
+	.product-content h4 {
+		font-size: 18px;
+		margin-bottom: 6px;
+	}
+	
+	.horeca-product-card:hover .product-content h4 {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	
+	.horeca-product-card:hover .product-content p {
+		font-size: 13px;
+		margin-bottom: 8px;
+	}
+	
+	.horeca-product-card:hover .product-content {
+		min-height: 100px;
+		padding: 15px;
+	}
+	
+	.advantage-card,
+	.usage-card,
+	.competitive-card,
+	.pricing-card {
+		margin-bottom: 30px;
+	}
+	
+	.pricing-card.featured {
+		transform: none;
+	}
+	
+	.cta-section h4 {
+		font-size: 24px;
+	}
+	
+	.cta-section {
+		padding: 30px 20px;
+		margin: 20px 10px;
+	}
+	
+	.filter-btn {
+		padding: 10px 16px;
+		font-size: 14px;
+		margin: 3px;
+	}
+	
+	.stat-number {
+		font-size: 2rem;
+	}
+	
+	.catalog-stats {
+		padding: 40px 0;
+	}
+}
