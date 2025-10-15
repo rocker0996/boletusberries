@@ -1,0 +1,29 @@
+{
+  "name": "Boletus Berries - Funghi e Bacche",
+  "short_name": "BoletusBerries",
+  "description": "Fornitura di funghi e bacche selvatiche in tutto il mondo. Funghi e bacche surgelati di alta qualità. Forniture all'ingrosso, HORECA, catene di vendita al dettaglio.",
+  "start_url": "/it/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7eb712",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "business", "shopping"],
+  "lang": "it",
+  "dir": "ltr",
+  "scope": "/it/",
+  "prefer_related_applications": false
+}

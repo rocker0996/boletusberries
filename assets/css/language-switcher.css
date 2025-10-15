@@ -11,13 +11,15 @@
     animation: fadeIn 0.3s ease;
 }
 
+/* Language menu overlay styles only */
+
 .language-dropdown-menu {
     position: absolute;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    max-width: 300px;
-    width: 280px;
+    max-width: 250px;
+    width: 220px;
     animation: slideDown 0.3s ease;
     overflow: hidden;
     z-index: 10000;
@@ -26,7 +28,7 @@
 /* Mobile positioning */
 @media (max-width: 768px) {
     .language-dropdown-menu {
-        width: 260px;
+        width: 200px;
     }
 }
 
@@ -52,9 +54,15 @@
     font-size: 18px;
     color: #6c757d;
     cursor: pointer;
-    padding: 5px;
+    padding: 8px;
     border-radius: 50%;
     transition: all 0.2s ease;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
 }
 
 .close-language-btn:hover {

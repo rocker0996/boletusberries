@@ -1,0 +1,29 @@
+{
+  "name": "Boletus Berries - Grzyby i Jagody",
+  "short_name": "BoletusBerries",
+  "description": "Dostawa dziko rosnących produktów na cały świat. Mrożone grzyby i jagody najwyższej jakości. Dostawy hurtowe, HORECA, sieci detaliczne.",
+  "start_url": "/pl/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7eb712",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "business", "shopping"],
+  "lang": "pl",
+  "dir": "ltr",
+  "scope": "/pl/",
+  "prefer_related_applications": false
+}

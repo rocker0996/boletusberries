@@ -1,0 +1,29 @@
+{
+  "name": "Boletus Berries - Грибы и ягоды",
+  "short_name": "BoletusBerries",
+  "description": "Поставка дикоросов по всему миру. Замороженные грибы и ягоды высшего качества. Оптовые поставки, HORECA, розничные сети.",
+  "start_url": "/ru/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7eb712",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "business", "shopping"],
+  "lang": "ru",
+  "dir": "ltr",
+  "scope": "/ru/",
+  "prefer_related_applications": false
+}

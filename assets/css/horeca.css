@@ -346,6 +346,19 @@
 	transform: rotate(45deg);
 }
 
+/* Language-specific popular badges */
+html[lang="en"] .pricing-card.featured:before {
+	content: "Popular";
+}
+
+html[lang="it"] .pricing-card.featured:before {
+	content: "Popolare";
+}
+
+html[lang="pl"] .pricing-card.featured:before {
+	content: "Popularny";
+}
+
 .pricing-header {
 	padding: 30px 20px 20px;
 	text-align: center;
