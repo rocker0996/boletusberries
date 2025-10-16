@@ -100,6 +100,7 @@ nav.main-menu {
 .site-logo {
   float: left;
   max-width: 150px;
+  margin-left: -20px; /* Сдвигаем логотип влево на десктопе */
 }
 
 ul.sub-menu li:last-child {
