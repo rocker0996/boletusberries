@@ -1,5 +1,5 @@
 # Главная страница - перенаправляем на русскую версию
-/ /ru/index.html 301
+/ /ru/index.html 301!
 
 # Перенаправление всех страниц на русскую версию
 /export /ru/export.html 200
@@ -12,6 +12,7 @@
 /catalog /ru/catalog.html 200
 
 # English version redirects
+/en /en/index.html 200
 /en/export /en/export.html 200
 /en/about /en/about.html 200
 /en/contact /en/contact.html 200
@@ -21,13 +22,8 @@
 /en/horeca /en/horeca.html 200
 /en/catalog /en/catalog.html 200
 
-# English main page
-/en /en/index.html 200
-
-# English 404 page
-/en/* /en/404.html 404
-
 # Italian version redirects
+/it /it/index.html 200
 /it/export /it/export.html 200
 /it/about /it/about.html 200
 /it/contact /it/contact.html 200
@@ -37,13 +33,8 @@
 /it/horeca /it/horeca.html 200
 /it/catalog /it/catalog.html 200
 
-# Italian main page
-/it /it/index.html 200
-
-# Italian 404 page
-/it/* /it/404.html 404
-
 # Polish version redirects
+/pl /pl/index.html 200
 /pl/export /pl/export.html 200
 /pl/about /pl/about.html 200
 /pl/contact /pl/contact.html 200
@@ -53,11 +44,10 @@
 /pl/horeca /pl/horeca.html 200
 /pl/catalog /pl/catalog.html 200
 
-# Polish main page
-/pl /pl/index.html 200
-
-# Polish 404 page
+# 404 страницы для языковых версий
+/en/* /en/404.html 404
+/it/* /it/404.html 404
 /pl/* /pl/404.html 404
 
-# Общая 404 страница для всех остальных запросов (должна быть в самом конце!)
+# Общая 404 страница для всех остальных запросов
 /* /ru/404.html 404

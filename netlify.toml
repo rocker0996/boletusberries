@@ -5,8 +5,18 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Redirects are handled by _redirects file
-# But we can add additional configuration here if needed
+# Redirects configuration
+[[redirects]]
+  from = "/"
+  to = "/ru/index.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/ru/404.html"
+  status = 404
+  conditions = {Role = ["admin"]}
 
 [[headers]]
   for = "/*"
