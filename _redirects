@@ -1,6 +1,51 @@
 # Главная страница
 / /ru/ 301!
 
+# Редиректы с .html на clean URLs (301 - постоянное перенаправление)
+# Русская версия
+/ru/index.html /ru/ 301!
+/ru/about.html /ru/about 301!
+/ru/catalog.html /ru/catalog 301!
+/ru/contact.html /ru/contact 301!
+/ru/production.html /ru/production 301!
+/ru/retail.html /ru/retail 301!
+/ru/wholesale.html /ru/wholesale 301!
+/ru/horeca.html /ru/horeca 301!
+/ru/export.html /ru/export 301!
+
+# Английская версия
+/en/index.html /en/ 301!
+/en/about.html /en/about 301!
+/en/catalog.html /en/catalog 301!
+/en/contact.html /en/contact 301!
+/en/production.html /en/production 301!
+/en/retail.html /en/retail 301!
+/en/wholesale.html /en/wholesale 301!
+/en/horeca.html /en/horeca 301!
+/en/export.html /en/export 301!
+
+# Итальянская версия
+/it/index.html /it/ 301!
+/it/about.html /it/about 301!
+/it/catalog.html /it/catalog 301!
+/it/contact.html /it/contact 301!
+/it/production.html /it/production 301!
+/it/retail.html /it/retail 301!
+/it/wholesale.html /it/wholesale 301!
+/it/horeca.html /it/horeca 301!
+/it/export.html /it/export 301!
+
+# Польская версия
+/pl/index.html /pl/ 301!
+/pl/about.html /pl/about 301!
+/pl/catalog.html /pl/catalog 301!
+/pl/contact.html /pl/contact 301!
+/pl/production.html /pl/production 301!
+/pl/retail.html /pl/retail 301!
+/pl/wholesale.html /pl/wholesale 301!
+/pl/horeca.html /pl/horeca 301!
+/pl/export.html /pl/export 301!
+
 # Clean URLs для русской версии (убираем .html)
 /ru/ /ru/index.html 200
 /ru/about /ru/about.html 200
