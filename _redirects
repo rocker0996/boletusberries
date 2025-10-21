@@ -2,6 +2,16 @@
 / /ru/ 301!
 
 # Редиректы с .html на clean URLs (301 - постоянное перенаправление)
+# Корневые пути с .html на clean URLs
+/about.html /ru/about 301!
+/catalog.html /ru/catalog 301!
+/contact.html /ru/contact 301!
+/production.html /ru/production 301!
+/retail.html /ru/retail 301!
+/wholesale.html /ru/wholesale 301!
+/horeca.html /ru/horeca 301!
+/export.html /ru/export 301!
+
 # Русская версия
 /ru/index.html /ru/ 301!
 /ru/about.html /ru/about 301!
@@ -90,15 +100,15 @@
 /pl/horeca /pl/horeca.html 200
 /pl/export /pl/export.html 200
 
-# Старые правила с .html (для обратной совместимости)
-/export /ru/export.html 200
-/about /ru/about.html 200
-/contact /ru/contact.html 200
-/production /ru/production.html 200
-/retail /ru/retail.html 200
-/wholesale /ru/wholesale.html 200
-/horeca /ru/horeca.html 200
-/catalog /ru/catalog.html 200
+# Старые правила (для обратной совместимости) - перенаправляем на clean URLs
+/export /ru/export 301
+/about /ru/about 301
+/contact /ru/contact 301
+/production /ru/production 301
+/retail /ru/retail 301
+/wholesale /ru/wholesale 301
+/horeca /ru/horeca 301
+/catalog /ru/catalog 301
 
 # 404 страницы для языковых версий
 /en/* /en/404.html 404
