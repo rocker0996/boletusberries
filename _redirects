@@ -1,18 +1,61 @@
 # Главная страница
-/ /ru/ 301!
+/ /ru/index.html 301!
 
-# Редиректы с .html на clean URLs (301 - постоянное перенаправление)
-# Корневые пути с .html на clean URLs
-/about.html /ru/about 301!
-/catalog.html /ru/catalog 301!
-/contact.html /ru/contact 301!
-/production.html /ru/production 301!
-/retail.html /ru/retail 301!
-/wholesale.html /ru/wholesale 301!
-/horeca.html /ru/horeca 301!
-/export.html /ru/export 301!
+# Clean URLs - показываем содержимое .html файлов без изменения URL
+/ru/ /ru/index.html 200
+/ru/about /ru/about.html 200
+/ru/catalog /ru/catalog.html 200
+/ru/contact /ru/contact.html 200
+/ru/production /ru/production.html 200
+/ru/retail /ru/retail.html 200
+/ru/wholesale /ru/wholesale.html 200
+/ru/horeca /ru/horeca.html 200
+/ru/export /ru/export.html 200
 
-# Русская версия
+# Английская версия
+/en/ /en/index.html 200
+/en/about /en/about.html 200
+/en/catalog /en/catalog.html 200
+/en/contact /en/contact.html 200
+/en/production /en/production.html 200
+/en/retail /en/retail.html 200
+/en/wholesale /en/wholesale.html 200
+/en/horeca /en/horeca.html 200
+/en/export /en/export.html 200
+
+# Итальянская версия
+/it/ /it/index.html 200
+/it/about /it/about.html 200
+/it/catalog /it/catalog.html 200
+/it/contact /it/contact.html 200
+/it/production /it/production.html 200
+/it/retail /it/retail.html 200
+/it/wholesale /it/wholesale.html 200
+/it/horeca /it/horeca.html 200
+/it/export /it/export.html 200
+
+# Польская версия
+/pl/ /pl/index.html 200
+/pl/about /pl/about.html 200
+/pl/catalog /pl/catalog.html 200
+/pl/contact /pl/contact.html 200
+/pl/production /pl/production.html 200
+/pl/retail /pl/retail.html 200
+/pl/wholesale /pl/wholesale.html 200
+/pl/horeca /pl/horeca.html 200
+/pl/export /pl/export.html 200
+
+# Старые правила (для обратной совместимости)
+/export /ru/export.html 301
+/about /ru/about.html 301
+/contact /ru/contact.html 301
+/production /ru/production.html 301
+/retail /ru/retail.html 301
+/wholesale /ru/wholesale.html 301
+/horeca /ru/horeca.html 301
+/catalog /ru/catalog.html 301
+
+# Редиректы с .html на clean URLs
 /ru/index.html /ru/ 301!
 /ru/about.html /ru/about 301!
 /ru/catalog.html /ru/catalog 301!
@@ -23,55 +66,8 @@
 /ru/horeca.html /ru/horeca 301!
 /ru/export.html /ru/export 301!
 
-# Английская версия
-/en/index.html /en/ 301!
-/en/about.html /en/about 301!
-/en/catalog.html /en/catalog 301!
-/en/contact.html /en/contact 301!
-/en/production.html /en/production 301!
-/en/retail.html /en/retail 301!
-/en/wholesale.html /en/wholesale 301!
-/en/horeca.html /en/horeca 301!
-/en/export.html /en/export 301!
-
-# Итальянская версия
-/it/index.html /it/ 301!
-/it/about.html /it/about 301!
-/it/catalog.html /it/catalog 301!
-/it/contact.html /it/contact 301!
-/it/production.html /it/production 301!
-/it/retail.html /it/retail 301!
-/it/wholesale.html /it/wholesale 301!
-/it/horeca.html /it/horeca 301!
-/it/export.html /it/export 301!
-
-# Польская версия
-/pl/index.html /pl/ 301!
-/pl/about.html /pl/about 301!
-/pl/catalog.html /pl/catalog 301!
-/pl/contact.html /pl/contact 301!
-/pl/production.html /pl/production 301!
-/pl/retail.html /pl/retail 301!
-/pl/wholesale.html /pl/wholesale 301!
-/pl/horeca.html /pl/horeca 301!
-/pl/export.html /pl/export 301!
-
-# Clean URLs будут обрабатываться через netlify.toml
-
-# Старые правила (для обратной совместимости) - перенаправляем на clean URLs
-/export /ru/export 301
-/about /ru/about 301
-/contact /ru/contact 301
-/production /ru/production 301
-/retail /ru/retail 301
-/wholesale /ru/wholesale 301
-/horeca /ru/horeca 301
-/catalog /ru/catalog 301
-
-# 404 страницы для языковых версий
+# 404 страницы
 /en/* /en/404.html 404
 /it/* /it/404.html 404
 /pl/* /pl/404.html 404
-
-# Общая 404 страница для всех остальных запросов
 /* /ru/404.html 404
