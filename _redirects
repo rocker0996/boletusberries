@@ -6,9 +6,10 @@
 /retail /ru/retail.html 200
 /wholesale /ru/wholesale.html 200
 /horeca /ru/horeca.html 200
+/catalog /ru/catalog.html 200
 
-# Главная страница
-/ /ru/index.html 200
+# Главная страница - перенаправляем на русскую версию
+/ /ru/index.html 301
 
 # 404 страница
 /* /ru/404.html 404
@@ -28,3 +29,35 @@
 
 # English 404 page
 /en/* /en/404.html 404
+
+# Italian version redirects
+/it/export /it/export.html 200
+/it/about /it/about.html 200
+/it/contact /it/contact.html 200
+/it/production /it/production.html 200
+/it/retail /it/retail.html 200
+/it/wholesale /it/wholesale.html 200
+/it/horeca /it/horeca.html 200
+/it/catalog /it/catalog.html 200
+
+# Italian main page
+/it /it/index.html 200
+
+# Italian 404 page
+/it/* /it/404.html 404
+
+# Polish version redirects
+/pl/export /pl/export.html 200
+/pl/about /pl/about.html 200
+/pl/contact /pl/contact.html 200
+/pl/production /pl/production.html 200
+/pl/retail /pl/retail.html 200
+/pl/wholesale /pl/wholesale.html 200
+/pl/horeca /pl/horeca.html 200
+/pl/catalog /pl/catalog.html 200
+
+# Polish main page
+/pl /pl/index.html 200
+
+# Polish 404 page
+/pl/* /pl/404.html 404
