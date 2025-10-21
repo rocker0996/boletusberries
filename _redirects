@@ -1,7 +1,51 @@
-# Главная страница - перенаправляем на русскую версию
-/ /ru/index.html 301!
+# Главная страница
+/ /ru/ 301!
 
-# Перенаправление всех страниц на русскую версию
+# Clean URLs для русской версии (убираем .html)
+/ru/ /ru/index.html 200
+/ru/about /ru/about.html 200
+/ru/catalog /ru/catalog.html 200
+/ru/contact /ru/contact.html 200
+/ru/production /ru/production.html 200
+/ru/retail /ru/retail.html 200
+/ru/wholesale /ru/wholesale.html 200
+/ru/horeca /ru/horeca.html 200
+/ru/export /ru/export.html 200
+
+# Clean URLs для английской версии
+/en/ /en/index.html 200
+/en/about /en/about.html 200
+/en/catalog /en/catalog.html 200
+/en/contact /en/contact.html 200
+/en/production /en/production.html 200
+/en/retail /en/retail.html 200
+/en/wholesale /en/wholesale.html 200
+/en/horeca /en/horeca.html 200
+/en/export /en/export.html 200
+
+# Clean URLs для итальянской версии
+/it/ /it/index.html 200
+/it/about /it/about.html 200
+/it/catalog /it/catalog.html 200
+/it/contact /it/contact.html 200
+/it/production /it/production.html 200
+/it/retail /it/retail.html 200
+/it/wholesale /it/wholesale.html 200
+/it/horeca /it/horeca.html 200
+/it/export /it/export.html 200
+
+# Clean URLs для польской версии
+/pl/ /pl/index.html 200
+/pl/about /pl/about.html 200
+/pl/catalog /pl/catalog.html 200
+/pl/contact /pl/contact.html 200
+/pl/production /pl/production.html 200
+/pl/retail /pl/retail.html 200
+/pl/wholesale /pl/wholesale.html 200
+/pl/horeca /pl/horeca.html 200
+/pl/export /pl/export.html 200
+
+# Старые правила с .html (для обратной совместимости)
 /export /ru/export.html 200
 /about /ru/about.html 200
 /contact /ru/contact.html 200
@@ -10,39 +54,6 @@
 /wholesale /ru/wholesale.html 200
 /horeca /ru/horeca.html 200
 /catalog /ru/catalog.html 200
-
-# English version redirects
-/en /en/index.html 200
-/en/export /en/export.html 200
-/en/about /en/about.html 200
-/en/contact /en/contact.html 200
-/en/production /en/production.html 200
-/en/retail /en/retail.html 200
-/en/wholesale /en/wholesale.html 200
-/en/horeca /en/horeca.html 200
-/en/catalog /en/catalog.html 200
-
-# Italian version redirects
-/it /it/index.html 200
-/it/export /it/export.html 200
-/it/about /it/about.html 200
-/it/contact /it/contact.html 200
-/it/production /it/production.html 200
-/it/retail /it/retail.html 200
-/it/wholesale /it/wholesale.html 200
-/it/horeca /it/horeca.html 200
-/it/catalog /it/catalog.html 200
-
-# Polish version redirects
-/pl /pl/index.html 200
-/pl/export /pl/export.html 200
-/pl/about /pl/about.html 200
-/pl/contact /pl/contact.html 200
-/pl/production /pl/production.html 200
-/pl/retail /pl/retail.html 200
-/pl/wholesale /pl/wholesale.html 200
-/pl/horeca /pl/horeca.html 200
-/pl/catalog /pl/catalog.html 200
 
 # 404 страницы для языковых версий
 /en/* /en/404.html 404
