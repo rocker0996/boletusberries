@@ -268,32 +268,14 @@
         </div>
     </div>
     
-    <!-- Auto-redirect script -->
+    <!-- Language detection and redirect script -->
     <script>
         // Detect user language and redirect accordingly
         function detectLanguage() {
             const path = window.location.pathname;
             const lang = navigator.language || navigator.userLanguage;
             
-            // If URL already contains language, redirect to that language's 404
-            if (path.startsWith('/ru/')) {
-                window.location.href = '/ru/404';
-                return;
-            }
-            if (path.startsWith('/en/')) {
-                window.location.href = '/en/404';
-                return;
-            }
-            if (path.startsWith('/it/')) {
-                window.location.href = '/it/404';
-                return;
-            }
-            if (path.startsWith('/pl/')) {
-                window.location.href = '/pl/404';
-                return;
-            }
-            
-            // Auto-detect language based on browser settings
+            // Auto-detect language based on browser settings for root 404
             if (lang.startsWith('ru')) {
                 window.location.href = '/ru/404';
             } else if (lang.startsWith('it')) {

@@ -100,8 +100,9 @@
 /pl/horeca.html /pl/horeca 301!
 /pl/export.html /pl/export 301!
 
-# 404 страницы
-/en/* /en/404.html 404
-/it/* /it/404.html 404
-/pl/* /pl/404.html 404
-/* /ru/404.html 404
+# 404 страницы - должны быть в конце файла
+/en/* /en/404.html 404!
+/it/* /it/404.html 404!
+/pl/* /pl/404.html 404!
+/ru/* /ru/404.html 404!
+/* /ru/404.html 404!
