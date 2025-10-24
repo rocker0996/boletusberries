@@ -275,7 +275,9 @@ class LanguageSwitcher {
             } else {
                 // For web servers, use normal path logic
                 let targetPath = '';
-                if (pathParts[1] === 'ru' || pathParts[1] === 'en') {
+                
+                // Check if we're already in a language-specific path
+                if (pathParts[1] === 'ru' || pathParts[1] === 'en' || pathParts[1] === 'it' || pathParts[1] === 'pl') {
                     // Replace language in path
                     pathParts[1] = langCode;
                     targetPath = pathParts.join('/');
