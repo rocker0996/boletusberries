@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | BoletusBerries</title>
+    <meta name="description" content="Page not found - Boletus Berries">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://boletusberries.com/404">
+    
+    <!-- Alternate language versions -->
+    <link rel="alternate" hreflang="en" href="https://boletusberries.com/en/404">
+    <link rel="alternate" hreflang="ru" href="https://boletusberries.com/ru/404">
+    <link rel="alternate" hreflang="it" href="https://boletusberries.com/it/404">
+    <link rel="alternate" hreflang="pl" href="https://boletusberries.com/pl/404">
+    <link rel="alternate" hreflang="x-default" href="https://boletusberries.com/ru/404">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    
+    <!-- main style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- 404 page styles -->
+    <link rel="stylesheet" href="assets/css/scss/pages/_404.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #7eb712 0%, #5a8a0a 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .error-container {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-number {
+            font-size: 8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .error-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .error-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid white;
+        }
+        
+        .error-btn-primary {
+            background: white;
+            color: #5a8a0a;
+        }
+        
+        .error-btn-primary:hover {
+            background: transparent;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .error-btn-secondary {
+            background: transparent;
+            color: white;
+        }
+        
+        .error-btn-secondary:hover {
+            background: white;
+            color: #5a8a0a;
+            transform: translateY(-2px);
+        }
+        
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .floating-element:nth-child(2) {
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+        
+        .floating-element:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .language-selector {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .language-selector h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .language-options {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .language-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .language-option:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .error-number {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .language-options {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating elements -->
+    <div class="floating-elements">
+        <div class="floating-element">
+            <i class="fas fa-leaf" style="font-size: 3rem;"></i>
+        </div>
+        <div class="floating-element">
+            <i class="fas fa-seedling" style="font-size: 2.5rem;"></i>
+        </div>
+        <div class="floating-element">
+            <i class="fas fa-carrot" style="font-size: 2rem;"></i>
+        </div>
+    </div>
+    
+    <div class="error-container">
+        <div class="error-number">404</div>
+        <h1 class="error-title">Oops! Page got lost in the forest</h1>
+        <p class="error-subtitle">Maybe it went to pick mushrooms and berries. But don't worry — we'll help you find what you need!</p>
+        
+        <div class="error-actions">
+            <a href="/ru/" class="error-btn error-btn-primary">
+                <i class="fas fa-home"></i>
+                To home
+            </a>
+            <a href="/ru/contact" class="error-btn error-btn-secondary">
+                <i class="fas fa-envelope"></i>
+                Contact us
+            </a>
+        </div>
+        
+        <div class="language-selector">
+            <h4>Choose your language:</h4>
+            <div class="language-options">
+                <a href="/ru/404" class="language-option">
+                    <span class="language-flag">🇷🇺</span>
+                    <span class="language-name">Русский</span>
+                </a>
+                <a href="/en/404" class="language-option">
+                    <span class="language-flag">🇺🇸</span>
+                    <span class="language-name">English</span>
+                </a>
+                <a href="/it/404" class="language-option">
+                    <span class="language-flag">🇮🇹</span>
+                    <span class="language-name">Italiano</span>
+                </a>
+                <a href="/pl/404" class="language-option">
+                    <span class="language-flag">🇵🇱</span>
+                    <span class="language-name">Polski</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Auto-redirect script -->
+    <script>
+        // Detect user language and redirect accordingly
+        function detectLanguage() {
+            const path = window.location.pathname;
+            const lang = navigator.language || navigator.userLanguage;
+            
+            // If URL already contains language, redirect to that language's 404
+            if (path.startsWith('/ru/')) {
+                window.location.href = '/ru/404';
+                return;
+            }
+            if (path.startsWith('/en/')) {
+                window.location.href = '/en/404';
+                return;
+            }
+            if (path.startsWith('/it/')) {
+                window.location.href = '/it/404';
+                return;
+            }
+            if (path.startsWith('/pl/')) {
+                window.location.href = '/pl/404';
+                return;
+            }
+            
+            // Auto-detect language based on browser settings
+            if (lang.startsWith('ru')) {
+                window.location.href = '/ru/404';
+            } else if (lang.startsWith('it')) {
+                window.location.href = '/it/404';
+            } else if (lang.startsWith('pl')) {
+                window.location.href = '/pl/404';
+            } else {
+                // Default to English
+                window.location.href = '/en/404';
+            }
+        }
+        
+        // Redirect after a short delay to allow user to see the page
+        setTimeout(detectLanguage, 2000);
+    </script>
+</body>
+</html>
