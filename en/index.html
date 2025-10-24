@@ -64,6 +64,77 @@
 	<!-- language switcher -->
 	<link rel="stylesheet" href="../assets/css/language-switcher.css">
 
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Organization",
+		"name": "Boletus Berries",
+		"legalName": "Boletus-LT LLC",
+		"url": "https://boletusberries.com",
+		"logo": "https://boletusberries.com/assets/img/logo.png",
+		"description": "Wild mushrooms and berries supply worldwide. Premium frozen mushrooms and berries. Wholesale, HORECA, retail chains.",
+		"foundingDate": "2009",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "Akademichesky proezd, 5, bldg. 1, office 213",
+			"addressLocality": "Tyumen",
+			"addressRegion": "Tyumen Oblast",
+			"postalCode": "625053",
+			"addressCountry": "RU"
+		},
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+7 919 9352598",
+			"contactType": "customer service",
+			"email": "boletus18@mail.ru",
+			"availableLanguage": ["Russian", "English"]
+		},
+		"hasOfferCatalog": {
+			"@type": "OfferCatalog",
+			"name": "Wild Mushrooms and Berries",
+			"itemListElement": [
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Product",
+						"name": "Frozen Mushrooms",
+						"description": "Wild mushrooms, frozen by shock freezing method",
+						"offers": {
+							"@type": "Offer",
+							"availability": "https://schema.org/InStock",
+							"priceCurrency": "USD",
+							"price": "On request",
+							"seller": {
+								"@type": "Organization",
+								"name": "Boletus Berries"
+							}
+						}
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Product",
+						"name": "Frozen Berries",
+						"description": "Wild berries, frozen by shock freezing method",
+						"offers": {
+							"@type": "Offer",
+							"availability": "https://schema.org/InStock",
+							"priceCurrency": "USD",
+							"price": "On request",
+							"seller": {
+								"@type": "Organization",
+								"name": "Boletus Berries"
+							}
+						}
+					}
+				}
+			]
+		}
+	}
+	</script>
+
 </head>
 
 <body>
