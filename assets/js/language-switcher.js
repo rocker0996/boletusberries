@@ -22,6 +22,11 @@ class LanguageSwitcher {
                 name: 'Polski',
                 flag: '🇵🇱',
                 code: 'pl'
+            },
+            'sr': {
+                name: 'Srpski',
+                flag: '🇷🇸',
+                code: 'sr'
             }
         };
         
@@ -45,6 +50,8 @@ class LanguageSwitcher {
             currentLang = 'it';
         } else if (pathParts[1] === 'pl') {
             currentLang = 'pl';
+        } else if (pathParts[1] === 'sr') {
+            currentLang = 'sr';
         }
         
         this.currentLanguage = currentLang;
@@ -277,7 +284,7 @@ class LanguageSwitcher {
                 let targetPath = '';
                 
                 // Check if we're already in a language-specific path
-                if (pathParts[1] === 'ru' || pathParts[1] === 'en' || pathParts[1] === 'it' || pathParts[1] === 'pl') {
+                if (pathParts[1] === 'ru' || pathParts[1] === 'en' || pathParts[1] === 'it' || pathParts[1] === 'pl' || pathParts[1] === 'sr') {
                     // Replace language in path
                     pathParts[1] = langCode;
                     targetPath = pathParts.join('/');

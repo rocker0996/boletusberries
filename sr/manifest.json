@@ -1,0 +1,29 @@
+{
+  "name": "Boletus Berries - Pečurke i bobice",
+  "short_name": "BoletusBerries",
+  "description": "Isporuka samoniklih proizvoda širom sveta. Zamrznute pečurke i bobičasto voće vrhunskog kvaliteta. Veleprodaja, HORECA, maloprodajni lanci.",
+  "start_url": "/sr/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7eb712",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "../assets/img/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "business", "shopping"],
+  "lang": "sr",
+  "dir": "ltr",
+  "scope": "/sr/",
+  "prefer_related_applications": false
+}
