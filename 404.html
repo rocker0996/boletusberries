@@ -14,6 +14,7 @@
     <link rel="alternate" hreflang="ru" href="https://boletusberries.com/ru/404">
     <link rel="alternate" hreflang="it" href="https://boletusberries.com/it/404">
     <link rel="alternate" hreflang="pl" href="https://boletusberries.com/pl/404">
+    <link rel="alternate" hreflang="sr" href="https://boletusberries.com/sr/404">
     <link rel="alternate" hreflang="x-default" href="https://boletusberries.com/ru/404">
     
     <!-- favicon -->
@@ -261,6 +262,10 @@
                     <span class="language-flag">🇵🇱</span>
                     <span class="language-name">Polski</span>
                 </a>
+                <a href="/sr/" class="language-option">
+                    <span class="language-flag">🇷🇸</span>
+                    <span class="language-name">Srpski</span>
+                </a>
             </div>
         </div>
     </div>
@@ -295,6 +300,13 @@
                 home: "Na stronę główną",
                 contact: "Napisz do nas",
                 language: "Wybierz język:"
+            },
+            sr: {
+                title: "Ups! Stranica se izgubila u šumi",
+                subtitle: "Možda je otišla da berete pečurke i jagode. Ali ne brinite — pomoći ćemo vam da pronađete ono što vam treba!",
+                home: "Na početnu",
+                contact: "Pišite nam",
+                language: "Izaberite jezik:"
             }
         };
         
@@ -313,6 +325,8 @@
                 detectedLang = 'it';
             } else if (path.startsWith('/pl/')) {
                 detectedLang = 'pl';
+            } else if (path.startsWith('/sr/')) {
+                detectedLang = 'sr';
             } else {
                 // Auto-detect from browser language
                 if (lang.startsWith('ru')) {
@@ -321,6 +335,8 @@
                     detectedLang = 'it';
                 } else if (lang.startsWith('pl')) {
                     detectedLang = 'pl';
+                } else if (lang.startsWith('sr')) {
+                    detectedLang = 'sr';
                 }
             }
             
