@@ -294,6 +294,12 @@
 	.breadcrumb-text h1 {
 	    font-size: 30px;
 	}
+	.page-production .breadcrumb-text h1 {
+		font-size: clamp(8px, 4.8vw, 20px);
+		letter-spacing: -0.03em;
+		line-height: 1.2;
+		white-space: nowrap;
+	}
 
 	.feature-bg:after {
 	    display: none;
